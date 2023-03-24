@@ -1,10 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pyopengl
 
 st.set_page_config(page_title='Benim Sayfam')
 
-profilTable = pd.read_excel("https://docs.google.com/spreadsheets/d/1faly1ExiwiQKu717yzDq2Tjcod4HAQe8/edit?usp=share_link&ouid=101454387806620253543&rtpof=true&sd=true", engine=pyopengl)
+profilTable = pd.read_excel("https://docs.google.com/spreadsheets/d/1faly1ExiwiQKu717yzDq2Tjcod4HAQe8/edit?usp=share_link&ouid=101454387806620253543&rtpof=true&sd=true")
 profil_df = pd.DataFrame(profilTable)
 profil_names = profil_df["PROFİL"].to_list()
 
